@@ -12,3 +12,5 @@ documentation and project commands.
 library](https://github.com/NDDev-Technocracy-Standarts/std-0004-ci-cd-workflows).
 
 [Visit NDDev](https://nddev.ai)
+
+[Contact](mailto:danil@nddev.ai)
