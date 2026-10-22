@@ -10,3 +10,7 @@ organization avatar unless the owner explicitly requests a change. Use short
 task branches
 and merge-commit PRs into `main`; profile maintenance does not require a `dev`
 branch.
+
+Follow the [versioning applicability](README.md#source-maintenance) for any future
+authorized release. Preserve native source identity and the profile owner; this
+task does not apply account settings or introduce a release tool.
