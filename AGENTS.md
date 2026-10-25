@@ -20,3 +20,6 @@ there own project adaptations. Resolve it with `std0000 resolve --project PATH` 
 catalog, then load the relevant items. A resolved selection does not prove implementation passed.
 Run the prepared `nddev check` for repository structure. Review profile content in GitHub's Markdown
 preview and verify the actual image and destination links before merging presentation changes.
+
+Public source CI checks the public contract in `.github/nddev-ci.toml`. Keep that path usable
+without private tools or authorization. A source CI pass does not establish profile presentation.

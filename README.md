@@ -20,3 +20,8 @@ The complete selected standards are recorded in [.nds/nddev.yaml](.nds/nddev.yam
 [GitHub-native profile placement decision](docs/decisions/0001-native-github-profile.md).
 [GitHub Releases](https://github.com/NDDev-Technocracy-Standarts/.github/releases) is the journal
 for any future independently versioned unit; the current profile remains identified by Git commits.
+
+Public PR and main CI use the public shared library on standard GitHub-hosted Linux. They check
+structured sources, local links, mechanical prose properties, workflow contracts and native Git
+history. The prepared private structural validator and visual review remain part of the owner's
+authorized merge checks; public CI does not load private tools or credentials.
