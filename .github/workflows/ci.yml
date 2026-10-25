@@ -16,6 +16,9 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
+      - uses: extractions/setup-just@53165ef7e734c5c07cb06b3c8e7b647c5aa16db3
+        with:
+          just-version: '1.59.0'
       - uses: NDDev-Technocracy-Standarts/std-0004-ci-cd-workflows/.github/actions/tools@7625c9c29c703d7492e0c04ff9c330e588ff1b09
         with:
           capability: security

@@ -25,3 +25,13 @@ Public PR and main CI use the public shared library on standard GitHub-hosted Li
 structured sources, local links, mechanical prose properties, workflow contracts and native Git
 history. The prepared private structural validator and visual review remain part of the owner's
 authorized merge checks; public CI does not load private tools or credentials.
+
+## Native commands
+
+Bare `just` lists applicable source operations without installing tools or reading credentials.
+`just check` uses the prepared public CI-library Python; select `NDDEV_CICD_PYTHON` when that
+interpreter is outside the current environment. `just structure` uses the prepared private owning
+validator (`NDDEV_STRUCTURE_VALIDATOR` when needed). `just verify` combines local source,
+structure and command formatting. `just fmt` changes only the command source. Public CI invokes
+the same native documentation owner and checks the command contract. Image generation and GitHub
+presentation review keep their existing explicit workflows.
