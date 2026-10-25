@@ -1,0 +1,25 @@
+name: main-ci
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: profile-main
+  cancel-in-progress: false
+jobs:
+  source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: NDDev-Technocracy-Standarts/std-0004-ci-cd-workflows/.github/actions/tools@7625c9c29c703d7492e0c04ff9c330e588ff1b09
+        with:
+          capability: security
+      - uses: NDDev-Technocracy-Standarts/std-0004-ci-cd-workflows/.github/actions/ci@7625c9c29c703d7492e0c04ff9c330e588ff1b09
+        env:
+          GITHUB_TOKEN: ${{ github.token }}

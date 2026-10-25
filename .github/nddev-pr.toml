@@ -1,0 +1,22 @@
+schema=1
+profiles=["workflows"]
+
+[extras.documents]
+purpose="Validate public structured sources, local links and authored instructions."
+command=["@library","documentation-check","--contract",".github/nddev-ci.toml"]
+timeout=120
+
+[documentation.style]
+authored=["README.md","AGENTS.md","profile/*.md","docs/decisions/*.md"]
+
+[extras.secrets]
+purpose="Scan the public profile's actual native Git history."
+command=["@library","secrets-check"]
+timeout=120
+
+[impact]
+baseline_workflow=".github/workflows/main-ci.yml"
+
+[impact.components.repository]
+paths=["**"]
+profiles=["workflows"]
