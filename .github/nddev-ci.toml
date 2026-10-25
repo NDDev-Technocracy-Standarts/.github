@@ -20,3 +20,8 @@ baseline_workflow=".github/workflows/main-ci.yml"
 [impact.components.repository]
 paths=["**"]
 profiles=["workflows"]
+
+[extras.command-interface]
+purpose="Check the native source command contract through the actual Just parser and formatter."
+command=["just","format-check"]
+timeout=30

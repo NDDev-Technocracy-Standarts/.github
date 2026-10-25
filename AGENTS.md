@@ -23,3 +23,6 @@ preview and verify the actual image and destination links before merging present
 
 Public source CI checks the public contract in `.github/nddev-ci.toml`. Keep that path usable
 without private tools or authorization. A source CI pass does not establish profile presentation.
+
+Use bare `just` for safe command discovery and `just verify` for local source/structure checks.
+The README identifies prepared tool prerequisites and the scope of public CI versus visual review.
