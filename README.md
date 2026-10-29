@@ -10,7 +10,7 @@ organization. It is abstract artwork, not a product screenshot.
 
 ## Source maintenance
 
-Maintenance adopts the [selected STD-0008 source](https://github.com/NDDev-Technocracy-Standarts/std-0008-component-versioning/blob/0c737860044edc8053cba33b94c1bdf05ac16480/standard.yml)
+Maintenance selects STD-0008 by stable ID through the native manifest and prepared catalog
 where an independently published versioned unit exists. This profile currently
 has no software package or numbered product release; Git commits identify its
 content. Routine profile edits do not create synthetic component versions. Public
@@ -35,3 +35,6 @@ validator (`NDDEV_STRUCTURE_VALIDATOR` when needed). `just verify` combines loca
 structure and command formatting. `just fmt` changes only the command source. Public CI invokes
 the same native documentation owner and checks the command contract. Image generation and GitHub
 presentation review keep their existing explicit workflows.
+
+Task changes integrate through dev, then the checked source is promoted to main.
+The profile's native directory and accepted placement decision remain unchanged.
