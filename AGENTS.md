@@ -8,14 +8,14 @@ Do not publish private system details, customer data or NDA material. Preserve
 the existing
 organization avatar unless the owner explicitly requests a change. Use short
 task branches
-and merge-commit PRs into `main`; profile maintenance does not require a `dev`
-branch.
+and merge-commit PRs into permanent `dev`, then promote `dev` into `main` with
+preserved history. The owner's accepted workflow applies to this profile source.
 
 Follow the [versioning applicability](README.md#source-maintenance) for any future
 authorized release. Preserve native source identity and the profile owner; this
 task does not apply account settings or introduce a release tool.
 
-The complete standards selection is in [.nds/nddev.yaml](.nds/nddev.yaml); selected ADR paths
+The owner-selected stable maintenance standards are in [.nds/nddev.yaml](.nds/nddev.yaml); selected ADR paths
 there own project adaptations. Resolve it with `std0000 resolve --project PATH` from the standards
 catalog, then load the relevant items. A resolved selection does not prove implementation passed.
 Run the prepared `nddev check` for repository structure. Review profile content in GitHub's Markdown
