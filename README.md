@@ -1,40 +1,20 @@
 # NDDev Standards organization profile
 
-The public introduction is maintained in [profile/README.md](profile/README.md).
+The public introduction of the NDDev Standards organization on GitHub:
+[profile/README.md](profile/README.md) and its cover.
 
-Its cover follows the NDDev light design system and was generated with ImageGen
-for this
-organization. It is abstract artwork, not a product screenshot.
+## Check
 
-[Visit NDDev](https://nddev.ai)
+`just check` checks the public sources, their links and the justfile's format with our CI
+library. `just fix` formats the justfile.
 
-## Source maintenance
+## Change
 
-Maintenance selects STD-0008 by stable ID through the native manifest and prepared catalog
-where an independently published versioned unit exists. This profile currently
-has no software package or numbered product release; Git commits identify its
-content. Routine profile edits do not create synthetic component versions. Public
-presentation remains in its existing source.
+Work on a task branch and merge into `dev` through a pull request. Once `dev` is verified, `main`
+moves forward to the same commit. Pull request and `main` checks run on GitHub's runners.
 
-The complete selected standards are recorded in [.nds/nddev.yaml](.nds/nddev.yaml), with the
-[GitHub-native profile placement decision](docs/decisions/0001-native-github-profile.md).
-[GitHub Releases](https://github.com/NDDev-Technocracy-Standarts/.github/releases) is the journal
-for any future independently versioned unit; the current profile remains identified by Git commits.
+## Credit
 
-Public PR and main CI use the public shared library on standard GitHub-hosted Linux. They check
-structured sources, local links, mechanical prose properties, workflow contracts and native Git
-history. The prepared private structural validator and visual review remain part of the owner's
-authorized merge checks; public CI does not load private tools or credentials.
-
-## Native commands
-
-Bare `just` lists applicable source operations without installing tools or reading credentials.
-`just check` uses the prepared public CI-library Python; select `NDDEV_CICD_PYTHON` when that
-interpreter is outside the current environment. `just structure` uses the prepared private owning
-validator (`NDDEV_STRUCTURE_VALIDATOR` when needed). `just verify` combines local source,
-structure and command formatting. `just fmt` changes only the command source. Public CI invokes
-the same native documentation owner and checks the command contract. Image generation and GitHub
-presentation review keep their existing explicit workflows.
-
-Task changes integrate through dev, then the checked source is promoted to main.
-The profile's native directory and accepted placement decision remain unchanged.
+Made by NDDev. If you use this material, please name NDDev and link
+<https://github.com/NDDev-Technocracy-Standarts/.github>. Licensed under Apache 2.0: see
+[LICENSE](LICENSE) and [NOTICE](NOTICE).

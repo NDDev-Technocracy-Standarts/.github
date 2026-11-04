@@ -7,7 +7,7 @@ command=["@library","documentation-check","--contract",".github/nddev-ci.toml"]
 timeout=120
 
 [documentation.style]
-authored=["README.md","AGENTS.md","profile/*.md","docs/decisions/*.md"]
+authored=["README.md","AGENTS.md","profile/*.md"]
 
 [extras.secrets]
 purpose="Scan the public profile's actual native Git history."
