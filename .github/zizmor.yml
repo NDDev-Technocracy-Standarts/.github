@@ -1,0 +1,5 @@
+# Our standard waits three days for a new version, as Dependabot does (technologies.md).
+rules:
+  dependabot-cooldown:
+    config:
+      days: 3
