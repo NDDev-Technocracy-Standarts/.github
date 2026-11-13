@@ -8,8 +8,8 @@ Our shared guidance covers repository structure, agent work, GitHub workflow,
 delivery,
 documentation and project commands.
 
-[Explore the public CI/CD
-library](https://github.com/NDDev-Technocracy-Standarts/std-0004-ci-cd-workflows).
+[Explore the public CI
+library](https://github.com/NDDev-Technocracy-OpenNetwork/nddev-ci).
 
 [Visit NDDev](https://nddev.ai)
 
